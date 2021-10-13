@@ -2841,28 +2841,249 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--super-prefix=<path>] [--config-env=<name>=<envvar>]
            <command> [<args>]
 mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+[master (root-commit) 119c54f] Commit plss
+ 210 files changed, 59397 insertions(+)
+ create mode 100644 LICENSE
+ create mode 100644 Terminal Saved Output
+ create mode 100644 _data/browser-bugs.yml
+ create mode 100644 _data/browser-features.yml
+ create mode 100644 _data/core-team.yml
+ create mode 100644 _data/glyphicons.yml
+ create mode 100644 _data/sass-team.yml
+ create mode 100644 _data/showcase.yml
+ create mode 100644 _data/translations.yml
+ create mode 100644 _includes/ads.html
+ create mode 100644 _includes/components/alerts.html
+ create mode 100644 _includes/components/badges.html
+ create mode 100644 _includes/components/breadcrumbs.html
+ create mode 100644 _includes/components/button-dropdowns.html
+ create mode 100644 _includes/components/button-groups.html
+ create mode 100644 _includes/components/dropdowns.html
+ create mode 100644 _includes/components/glyphicons.html
+ create mode 100644 _includes/components/input-groups.html
+ create mode 100644 _includes/components/jumbotron.html
+ create mode 100644 _includes/components/labels.html
+ create mode 100644 _includes/components/list-group.html
+ create mode 100644 _includes/components/media.html
+ create mode 100644 _includes/components/navbar.html
+ create mode 100644 _includes/components/navs.html
+ create mode 100644 _includes/components/page-header.html
+ create mode 100644 _includes/components/pagination.html
+ create mode 100644 _includes/components/panels.html
+ create mode 100644 _includes/components/progress-bars.html
+ create mode 100644 _includes/components/responsive-embed.html
+ create mode 100644 _includes/components/thumbnails.html
+ create mode 100644 _includes/components/wells.html
+ create mode 100644 _includes/css/buttons.html
+ create mode 100644 _includes/css/code.html
+ create mode 100644 _includes/css/forms.html
+ create mode 100644 _includes/css/grid.html
+ create mode 100644 _includes/css/helpers.html
+ create mode 100644 _includes/css/images.html
+ create mode 100644 _includes/css/less.html
+ create mode 100644 _includes/css/overview.html
+ create mode 100644 _includes/css/responsive-utilities.html
+ create mode 100644 _includes/css/sass.html
+ create mode 100644 _includes/css/tables.html
+ create mode 100644 _includes/css/type.html
+ create mode 100644 _includes/customizer-variables.html
+ create mode 100644 _includes/footer.html
+ create mode 100644 _includes/getting-started/accessibility.html
+ create mode 100644 _includes/getting-started/browser-device-support.html
+ create mode 100644 _includes/getting-started/community.html
+ create mode 100644 _includes/getting-started/disabling-responsiveness.html
+ create mode 100644 _includes/getting-started/download.html
+ create mode 100644 _includes/getting-started/examples.html
+ create mode 100644 _includes/getting-started/grunt.html
+ create mode 100644 _includes/getting-started/license.html
+ create mode 100644 _includes/getting-started/template.html
+ create mode 100644 _includes/getting-started/third-party-support.html
+ create mode 100644 _includes/getting-started/tools.html
+ create mode 100644 _includes/getting-started/translations.html
+ create mode 100644 _includes/getting-started/whats-included.html
+ create mode 100644 _includes/header.html
+ create mode 100644 _includes/js/affix.html
+ create mode 100644 _includes/js/alerts.html
+ create mode 100644 _includes/js/buttons.html
+ create mode 100644 _includes/js/carousel.html
+ create mode 100644 _includes/js/collapse.html
+ create mode 100644 _includes/js/dropdowns.html
+ create mode 100644 _includes/js/modal.html
+ create mode 100644 _includes/js/overview.html
+ create mode 100644 _includes/js/popovers.html
+ create mode 100644 _includes/js/scrollspy.html
+ create mode 100644 _includes/js/tabs.html
+ create mode 100644 _includes/js/tooltips.html
+ create mode 100644 _includes/js/transitions.html
+ create mode 100644 _includes/nav/about.html
+ create mode 100644 _includes/nav/components.html
+ create mode 100644 _includes/nav/css.html
+ create mode 100644 _includes/nav/customize.html
+ create mode 100644 _includes/nav/getting-started.html
+ create mode 100644 _includes/nav/javascript.html
+ create mode 100644 _includes/nav/main.html
+ create mode 100644 _includes/nav/migration.html
+ create mode 100644 _layouts/default.html
+ create mode 100644 _layouts/home.html
+ create mode 100644 _plugins/bridge.rb
+ create mode 100644 _plugins/bugify.rb
+ create mode 100644 _pug/customizer-nav.pug
+ create mode 100644 _pug/customizer-variables.pug
+ create mode 100644 about.html
+ create mode 100644 apple-touch-icon.png
+ create mode 100644 assets/brand/bootstrap-outline.svg
+ create mode 100644 assets/brand/bootstrap-punchout.svg
+ create mode 100644 assets/brand/bootstrap-solid.svg
+ create mode 100644 assets/css/docs.min.css
+ create mode 100644 assets/css/docs.min.css.map
+ create mode 100644 assets/css/ie10-viewport-bug-workaround.css
+ create mode 100644 assets/css/src/docs.css
+ create mode 100644 assets/css/src/pygments-manni.css
+ create mode 100644 assets/flash/ZeroClipboard.swf
+ create mode 100644 assets/img/components.png
+ create mode 100644 assets/img/devices.png
+ create mode 100644 assets/img/expo-lyft.jpg
+ create mode 100644 assets/img/expo-newsweek.jpg
+ create mode 100644 assets/img/expo-riot.jpg
+ create mode 100644 assets/img/expo-vogue.jpg
+ create mode 100644 assets/img/sass-less.png
+ create mode 100644 assets/js/customize.min.js
+ create mode 100644 assets/js/docs.min.js
+ create mode 100644 assets/js/ie-emulation-modes-warning.js
+ create mode 100644 assets/js/ie10-viewport-bug-workaround.js
+ create mode 100644 assets/js/ie8-responsive-file-warning.js
+ create mode 100644 assets/js/raw-files.min.js
+ create mode 100644 assets/js/src/application.js
+ create mode 100644 assets/js/src/customizer.js
+ create mode 100644 assets/js/vendor/Blob.js
+ create mode 100644 assets/js/vendor/FileSaver.js
+ create mode 100644 assets/js/vendor/ZeroClipboard.min.js
+ create mode 100644 assets/js/vendor/anchor.min.js
+ create mode 100644 assets/js/vendor/autoprefixer.js
+ create mode 100644 assets/js/vendor/holder.min.js
+ create mode 100644 assets/js/vendor/jquery.min.js
+ create mode 100644 assets/js/vendor/jszip.min.js
+ create mode 100644 assets/js/vendor/less.min.js
+ create mode 100644 assets/js/vendor/uglify.min.js
+ create mode 100644 browser-bugs.html
+ create mode 100644 commit indeksik
+ create mode 100644 components.html
+ create mode 100644 css.html
+ create mode 100644 customize.html
+ create mode 100644 dist/css/bootstrap-theme.css
+ create mode 100644 dist/css/bootstrap-theme.css.map
+ create mode 100644 dist/css/bootstrap-theme.min.css
+ create mode 100644 dist/css/bootstrap-theme.min.css.map
+ create mode 100644 dist/css/bootstrap.css
+ create mode 100644 dist/css/bootstrap.css.map
+ create mode 100644 dist/css/bootstrap.min.css
+ create mode 100644 dist/css/bootstrap.min.css.map
+ create mode 100644 dist/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 dist/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 dist/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 dist/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 dist/fonts/glyphicons-halflings-regular.woff2
+ create mode 100644 dist/js/bootstrap.js
+ create mode 100644 dist/js/bootstrap.min.js
+ create mode 100644 dist/js/npm.js
+ create mode 100644 examples/blog/blog.css
+ create mode 100644 examples/blog/index.html
+ create mode 100644 examples/carousel/carousel.css
+ create mode 100644 examples/carousel/index.html
+ create mode 100644 examples/cover/cover.css
+ create mode 100644 examples/cover/index.html
+ create mode 100644 examples/dashboard/dashboard.css
+ create mode 100644 examples/dashboard/index.html
+ create mode 100644 examples/grid/grid.css
+ create mode 100644 examples/grid/index.html
+ create mode 100644 examples/jumbotron-narrow/index.html
+ create mode 100644 examples/jumbotron-narrow/jumbotron-narrow.css
+ create mode 100644 examples/jumbotron/index.html
+ create mode 100644 examples/jumbotron/jumbotron.css
+ create mode 100644 examples/justified-nav/index.html
+ create mode 100644 examples/justified-nav/justified-nav.css
+ create mode 100644 examples/navbar-fixed-top/index.html
+ create mode 100644 examples/navbar-fixed-top/navbar-fixed-top.css
+ create mode 100644 examples/navbar-static-top/index.html
+ create mode 100644 examples/navbar-static-top/navbar-static-top.css
+ create mode 100644 examples/navbar/index.html
+ create mode 100644 examples/navbar/navbar.css
+ create mode 100644 examples/non-responsive/index.html
+ create mode 100644 examples/non-responsive/non-responsive.css
+ create mode 100644 examples/offcanvas/index.html
+ create mode 100644 examples/offcanvas/offcanvas.css
+ create mode 100644 examples/offcanvas/offcanvas.js
+ create mode 100644 examples/screenshots/blog.jpg
+ create mode 100644 examples/screenshots/carousel.jpg
+ create mode 100644 examples/screenshots/cover.jpg
+ create mode 100644 examples/screenshots/dashboard.jpg
+ create mode 100644 examples/screenshots/equal-height-columns.jpg
+ create mode 100644 examples/screenshots/grid.jpg
+ create mode 100644 examples/screenshots/jumbotron-narrow.jpg
+ create mode 100644 examples/screenshots/jumbotron.jpg
+ create mode 100644 examples/screenshots/justified-nav.jpg
+ create mode 100644 examples/screenshots/navbar-fixed.jpg
+ create mode 100644 examples/screenshots/navbar-static.jpg
+ create mode 100644 examples/screenshots/navbar.jpg
+ create mode 100644 examples/screenshots/non-responsive.jpg
+ create mode 100644 examples/screenshots/offcanvas.jpg
+ create mode 100644 examples/screenshots/sign-in.jpg
+ create mode 100644 examples/screenshots/starter-template.jpg
+ create mode 100644 examples/screenshots/sticky-footer-navbar.jpg
+ create mode 100644 examples/screenshots/sticky-footer.jpg
+ create mode 100644 examples/screenshots/theme.jpg
+ create mode 100644 examples/signin/index.html
+ create mode 100644 examples/signin/signin.css
+ create mode 100644 examples/starter-template/index.html
+ create mode 100644 examples/starter-template/starter-template.css
+ create mode 100644 examples/sticky-footer-navbar/index.html
+ create mode 100644 examples/sticky-footer-navbar/sticky-footer-navbar.css
+ create mode 100644 examples/sticky-footer/index.html
+ create mode 100644 examples/sticky-footer/sticky-footer.css
+ create mode 100644 examples/theme/index.html
+ create mode 100644 examples/theme/theme.css
+ create mode 100644 examples/tooltip-viewport/index.html
+ create mode 100644 examples/tooltip-viewport/tooltip-viewport.css
+ create mode 100644 examples/tooltip-viewport/tooltip-viewport.js
+ create mode 100644 favicon.ico
+ create mode 100644 getting-started.html
+ create mode 100644 index.html
+ create mode 100644 javascript.html
+ create mode 100644 migration.html
+ create mode 100644 new_file.txt
+ create mode 100644 readme.md
+ create mode 100644 robots.txt
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Terminal Saved Output
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit -a
 hint: Waiting for your editor to close the file... 
-Commit plss
+Modifikacje
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
 # On branch master
-#
-# Initial commit
-#
 # Changes to be committed:
-#       new file:   LICENSE
-#       new file:   Terminal Saved Output
-#       new file:   _data/browser-bugs.yml
-#       new file:   _data/browser-features.yml
-#       new file:   _data/core-team.yml
-#       new file:   _data/glyphicons.yml
-#       new file:   _data/sass-team.yml
-#       new file:   _data/showcase.yml
-#       new file:   _data/translations.yml
-#       new file:   _includes/ads.html
-#       new file:   _includes/components/alerts.html
-#       new file:   _includes/components/badges.html
-#       new file:   _includes/components/breadcrumbs.html
-#       new file:   _includes/components/button-dropdowns.html
+#       modified:   Terminal Saved Output
+#
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
 -- INSERT --
