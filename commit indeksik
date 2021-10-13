@@ -1,0 +1,2403 @@
+Last login: Wed Oct 13 14:04:24 on ttys000
+mariuszrokosz@Mariusz-Rokosz ~ % touch new file.txt
+mariuszrokosz@Mariusz-Rokosz ~ % open readme.md
+The file /Users/mariuszrokosz/readme.md does not exist.
+mariuszrokosz@Mariusz-Rokosz ~ % ls
+Applications		Pictures		new
+Desktop			Public			node_modules
+Documents		cypress			npm init
+Downloads		cypress.json		package-lock.json
+Library			file.txt		package.json
+Movies			kurs-gita
+Music			my-project
+mariuszrokosz@Mariusz-Rokosz ~ % cd /kurs-gita
+cd: no such file or directory: /kurs-gita
+mariuszrokosz@Mariusz-Rokosz ~ % cd "/kurs-gita"
+cd: no such file or directory: /kurs-gita
+mariuszrokosz@Mariusz-Rokosz ~ % cd "/Users/mariuszrokosz/kurs-gita"
+mariuszrokosz@Mariusz-Rokosz kurs-gita % ls
+readme.md
+mariuszrokosz@Mariusz-Rokosz kurs-gita % touch new_file.txt
+mariuszrokosz@Mariusz-Rokosz kurs-gita % ls
+new_file.txt	readme.md
+mariuszrokosz@Mariusz-Rokosz kurs-gita % open readme.md
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   readme.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	new_file.txt
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git add .
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % status
+zsh: command not found: status
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git add .
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .           
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git add .
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % add .
+zsh: command not found: add
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git add .
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git diff
+diff --git a/examples/jumbotron/index.html b/examples/jumbotron/index.html
+index 328fa3f..479c6b7 100644
+--- a/examples/jumbotron/index.html
++++ b/examples/jumbotron/index.html
+@@ -89,7 +89,7 @@
+       <hr>
+ 
+       <footer>
+-        <p>&copy;Company, Inc.</p>
++        <p>&copy;2077 Company, Inc.</p>
+       </footer>
+     </div> <!-- /container -->
+ 
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git config diff.tool opendiff
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git difftool
+
+Viewing (1/1): 'examples/jumbotron/index.html'
+Launch 'opendiff' [Y/n]? y
+xcode-select: error: tool 'opendiff' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log -n4
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log     
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % gitk
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git tag finish_init
+fatal: Failed to resolve 'HEAD' as a valid ref.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Terminal Saved Output
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git add .
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   Terminal Saved Output
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log   
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git -commit
+unknown option: -commit
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   LICENSE
+	new file:   Terminal Saved Output
+	new file:   _data/browser-bugs.yml
+	new file:   _data/browser-features.yml
+	new file:   _data/core-team.yml
+	new file:   _data/glyphicons.yml
+	new file:   _data/sass-team.yml
+	new file:   _data/showcase.yml
+	new file:   _data/translations.yml
+	new file:   _includes/ads.html
+	new file:   _includes/components/alerts.html
+	new file:   _includes/components/badges.html
+	new file:   _includes/components/breadcrumbs.html
+	new file:   _includes/components/button-dropdowns.html
+	new file:   _includes/components/button-groups.html
+	new file:   _includes/components/dropdowns.html
+	new file:   _includes/components/glyphicons.html
+	new file:   _includes/components/input-groups.html
+	new file:   _includes/components/jumbotron.html
+	new file:   _includes/components/labels.html
+	new file:   _includes/components/list-group.html
+	new file:   _includes/components/media.html
+	new file:   _includes/components/navbar.html
+	new file:   _includes/components/navs.html
+	new file:   _includes/components/page-header.html
+	new file:   _includes/components/pagination.html
+	new file:   _includes/components/panels.html
+	new file:   _includes/components/progress-bars.html
+	new file:   _includes/components/responsive-embed.html
+	new file:   _includes/components/thumbnails.html
+	new file:   _includes/components/wells.html
+	new file:   _includes/css/buttons.html
+	new file:   _includes/css/code.html
+	new file:   _includes/css/forms.html
+	new file:   _includes/css/grid.html
+	new file:   _includes/css/helpers.html
+	new file:   _includes/css/images.html
+	new file:   _includes/css/less.html
+	new file:   _includes/css/overview.html
+	new file:   _includes/css/responsive-utilities.html
+	new file:   _includes/css/sass.html
+	new file:   _includes/css/tables.html
+	new file:   _includes/css/type.html
+	new file:   _includes/customizer-variables.html
+	new file:   _includes/footer.html
+	new file:   _includes/getting-started/accessibility.html
+	new file:   _includes/getting-started/browser-device-support.html
+	new file:   _includes/getting-started/community.html
+	new file:   _includes/getting-started/disabling-responsiveness.html
+	new file:   _includes/getting-started/download.html
+	new file:   _includes/getting-started/examples.html
+	new file:   _includes/getting-started/grunt.html
+	new file:   _includes/getting-started/license.html
+	new file:   _includes/getting-started/template.html
+	new file:   _includes/getting-started/third-party-support.html
+	new file:   _includes/getting-started/tools.html
+	new file:   _includes/getting-started/translations.html
+	new file:   _includes/getting-started/whats-included.html
+	new file:   _includes/header.html
+	new file:   _includes/js/affix.html
+	new file:   _includes/js/alerts.html
+	new file:   _includes/js/buttons.html
+	new file:   _includes/js/carousel.html
+	new file:   _includes/js/collapse.html
+	new file:   _includes/js/dropdowns.html
+	new file:   _includes/js/modal.html
+	new file:   _includes/js/overview.html
+	new file:   _includes/js/popovers.html
+	new file:   _includes/js/scrollspy.html
+	new file:   _includes/js/tabs.html
+	new file:   _includes/js/tooltips.html
+	new file:   _includes/js/transitions.html
+	new file:   _includes/nav/about.html
+	new file:   _includes/nav/components.html
+	new file:   _includes/nav/css.html
+	new file:   _includes/nav/customize.html
+	new file:   _includes/nav/getting-started.html
+	new file:   _includes/nav/javascript.html
+	new file:   _includes/nav/main.html
+	new file:   _includes/nav/migration.html
+	new file:   _layouts/default.html
+	new file:   _layouts/home.html
+	new file:   _plugins/bridge.rb
+	new file:   _plugins/bugify.rb
+	new file:   _pug/customizer-nav.pug
+	new file:   _pug/customizer-variables.pug
+	new file:   about.html
+	new file:   apple-touch-icon.png
+	new file:   assets/brand/bootstrap-outline.svg
+	new file:   assets/brand/bootstrap-punchout.svg
+	new file:   assets/brand/bootstrap-solid.svg
+	new file:   assets/css/docs.min.css
+	new file:   assets/css/docs.min.css.map
+	new file:   assets/css/ie10-viewport-bug-workaround.css
+	new file:   assets/css/src/docs.css
+	new file:   assets/css/src/pygments-manni.css
+	new file:   assets/flash/ZeroClipboard.swf
+	new file:   assets/img/components.png
+	new file:   assets/img/devices.png
+	new file:   assets/img/expo-lyft.jpg
+	new file:   assets/img/expo-newsweek.jpg
+	new file:   assets/img/expo-riot.jpg
+	new file:   assets/img/expo-vogue.jpg
+	new file:   assets/img/sass-less.png
+	new file:   assets/js/customize.min.js
+	new file:   assets/js/docs.min.js
+	new file:   assets/js/ie-emulation-modes-warning.js
+	new file:   assets/js/ie10-viewport-bug-workaround.js
+	new file:   assets/js/ie8-responsive-file-warning.js
+	new file:   assets/js/raw-files.min.js
+	new file:   assets/js/src/application.js
+	new file:   assets/js/src/customizer.js
+	new file:   assets/js/vendor/Blob.js
+	new file:   assets/js/vendor/FileSaver.js
+	new file:   assets/js/vendor/ZeroClipboard.min.js
+	new file:   assets/js/vendor/anchor.min.js
+	new file:   assets/js/vendor/autoprefixer.js
+	new file:   assets/js/vendor/holder.min.js
+	new file:   assets/js/vendor/jquery.min.js
+	new file:   assets/js/vendor/jszip.min.js
+	new file:   assets/js/vendor/less.min.js
+	new file:   assets/js/vendor/uglify.min.js
+	new file:   browser-bugs.html
+	new file:   components.html
+	new file:   css.html
+	new file:   customize.html
+	new file:   dist/css/bootstrap-theme.css
+	new file:   dist/css/bootstrap-theme.css.map
+	new file:   dist/css/bootstrap-theme.min.css
+	new file:   dist/css/bootstrap-theme.min.css.map
+	new file:   dist/css/bootstrap.css
+	new file:   dist/css/bootstrap.css.map
+	new file:   dist/css/bootstrap.min.css
+	new file:   dist/css/bootstrap.min.css.map
+	new file:   dist/fonts/glyphicons-halflings-regular.eot
+	new file:   dist/fonts/glyphicons-halflings-regular.svg
+	new file:   dist/fonts/glyphicons-halflings-regular.ttf
+	new file:   dist/fonts/glyphicons-halflings-regular.woff
+	new file:   dist/fonts/glyphicons-halflings-regular.woff2
+	new file:   dist/js/bootstrap.js
+	new file:   dist/js/bootstrap.min.js
+	new file:   dist/js/npm.js
+	new file:   examples/blog/blog.css
+	new file:   examples/blog/index.html
+	new file:   examples/carousel/carousel.css
+	new file:   examples/carousel/index.html
+	new file:   examples/cover/cover.css
+	new file:   examples/cover/index.html
+	new file:   examples/dashboard/dashboard.css
+	new file:   examples/dashboard/index.html
+	new file:   examples/grid/grid.css
+	new file:   examples/grid/index.html
+	new file:   examples/jumbotron-narrow/index.html
+	new file:   examples/jumbotron-narrow/jumbotron-narrow.css
+	new file:   examples/jumbotron/index.html
+	new file:   examples/jumbotron/jumbotron.css
+	new file:   examples/justified-nav/index.html
+	new file:   examples/justified-nav/justified-nav.css
+	new file:   examples/navbar-fixed-top/index.html
+	new file:   examples/navbar-fixed-top/navbar-fixed-top.css
+	new file:   examples/navbar-static-top/index.html
+	new file:   examples/navbar-static-top/navbar-static-top.css
+	new file:   examples/navbar/index.html
+	new file:   examples/navbar/navbar.css
+	new file:   examples/non-responsive/index.html
+	new file:   examples/non-responsive/non-responsive.css
+	new file:   examples/offcanvas/index.html
+	new file:   examples/offcanvas/offcanvas.css
+	new file:   examples/offcanvas/offcanvas.js
+	new file:   examples/screenshots/blog.jpg
+	new file:   examples/screenshots/carousel.jpg
+	new file:   examples/screenshots/cover.jpg
+	new file:   examples/screenshots/dashboard.jpg
+	new file:   examples/screenshots/equal-height-columns.jpg
+	new file:   examples/screenshots/grid.jpg
+	new file:   examples/screenshots/jumbotron-narrow.jpg
+	new file:   examples/screenshots/jumbotron.jpg
+	new file:   examples/screenshots/justified-nav.jpg
+	new file:   examples/screenshots/navbar-fixed.jpg
+	new file:   examples/screenshots/navbar-static.jpg
+	new file:   examples/screenshots/navbar.jpg
+	new file:   examples/screenshots/non-responsive.jpg
+	new file:   examples/screenshots/offcanvas.jpg
+	new file:   examples/screenshots/sign-in.jpg
+	new file:   examples/screenshots/starter-template.jpg
+	new file:   examples/screenshots/sticky-footer-navbar.jpg
+	new file:   examples/screenshots/sticky-footer.jpg
+	new file:   examples/screenshots/theme.jpg
+	new file:   examples/signin/index.html
+	new file:   examples/signin/signin.css
+	new file:   examples/starter-template/index.html
+	new file:   examples/starter-template/starter-template.css
+	new file:   examples/sticky-footer-navbar/index.html
+	new file:   examples/sticky-footer-navbar/sticky-footer-navbar.css
+	new file:   examples/sticky-footer/index.html
+	new file:   examples/sticky-footer/sticky-footer.css
+	new file:   examples/theme/index.html
+	new file:   examples/theme/theme.css
+	new file:   examples/tooltip-viewport/index.html
+	new file:   examples/tooltip-viewport/tooltip-viewport.css
+	new file:   examples/tooltip-viewport/tooltip-viewport.js
+	new file:   favicon.ico
+	new file:   getting-started.html
+	new file:   index.html
+	new file:   javascript.html
+	new file:   migration.html
+	new file:   new_file.txt
+	new file:   readme.md
+	new file:   robots.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   examples/jumbotron/index.html
+
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log
+fatal: your current branch 'master' does not have any commits yet
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit index.html
+hint: Waiting for your editor to close the file... 
+Commit wariacie indeksik
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#       new file:   index.html
+#
+# Untracked files:
+#       LICENSE
+#       Terminal Saved Output
+#       _data/
+#       _includes/
+#       _layouts/
+#       _plugins/
+#       _pug/
+#       about.html
+#       apple-touch-icon.png
+#       assets/
+#       browser-bugs.html
+-- INSERT --
