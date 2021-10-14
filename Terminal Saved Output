@@ -3062,16 +3062,32 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit -a
+[master 0d0a15d] Modifikacje
+ 1 file changed, 700 insertions(+), 6 deletions(-)
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git log
+commit 0d0a15d2dfb863ae3f8a002da5d9099f4228a87e (HEAD -> master)
+Author: Mariusz Rokosz <mariusz.rokosz@htdevelopers.com>
+Date:   Wed Oct 13 15:12:20 2021 +0200
+
+    Modifikacje
+
+commit 119c54f9788e7f6f3c4ce14feebf4b969edaa5a6
+Author: Mariusz Rokosz <mariusz.rokosz@htdevelopers.com>
+Date:   Wed Oct 13 15:11:24 2021 +0200
+
+    Commit plss
+mariuszrokosz@Mariusz-Rokosz kurs-gita % gitk
+mariuszrokosz@Mariusz-Rokosz kurs-gita % git commit -a
 hint: Waiting for your editor to close the file... 
-Modifikacje
+hanged to pizdzisko
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
 # On branch master
 # Changes to be committed:
 #       modified:   Terminal Saved Output
+#       modified:   examples/jumbotron/index.html
 #
-~                                                                               
 ~                                                                               
 ~                                                                               
 ~                                                                               
